@@ -1,0 +1,759 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+body{
+    font-family: Roboto,Tahoma, sans-serif;
+}
+
+/* header */
+header{
+    background-image:url(images/here-background.jpg) ;
+    background-repeat: no-repeat;
+    background-color: #2bade7;
+    padding-top: 18px;
+    background-size: cover;
+    background-position: center top ;
+}
+
+/* top-bar */
+#top-bar{
+    display: flex;
+}
+
+#top-bar ul {
+    flex-grow: 1;
+    font-size: 0;
+}
+
+#top-bar ul li{
+    display: inline-block;
+}
+
+#top-bar ul:last-child{
+    text-align: right;
+}
+
+#top-bar ul li a{
+    display: inline-flex;
+    line-height: 54px;
+    height: 54px;
+    color: white;
+    font-size: 16px;
+    padding: 0px 25px;
+}
+
+#top-bar ul li a:hover{
+    color: #2f2f2f;
+}
+
+#top-bar ul:first-child li:first-child a{
+    padding-left: 0;
+}
+
+#top-bar ul:last-child li a{
+    padding: 0px 60px;
+}
+
+#top-bar ul li a.active{
+    border: 2px solid white;
+    line-height: 54px;
+    border-radius: 27px;
+}
+
+/* hero */
+header h1{
+    font-size: 66px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    max-width: 520px;
+    margin: 0px auto;
+    line-height: 86px;
+    margin-top: 104px;
+}
+
+#hero img{
+    display: block;
+    margin: 32px auto 0px auto;
+}
+
+/* guide */
+#guide{
+    display: flex;
+}
+
+#guide div{
+    padding: 94px 45px 40px 45px;
+}
+#guide div:hover{
+    border-radius: 10px;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.1);
+}
+
+#guide h4{
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #334e68;
+    margin-top: 17px;
+}
+
+#guide h4 span{
+    color: #2186eb;
+}
+
+#guide p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #627d98;
+    font-weight: 400;
+    margin-top:15px ;
+}
+
+/* how */
+#how h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#how h2 span{
+    color: #2186eb;
+}
+
+#how p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #627d98;
+    font-weight: 400;
+    margin-top:15px ;
+}
+
+#how img{
+    margin-top:50px;
+    margin-left: 102px;
+}
+
+/* love */
+
+#love h2{
+    text-align: center;
+    margin-top: 100px;   
+}
+
+#love h2 span{
+    color: #2186eb;
+}
+
+#love .feedback{
+    display: flex;
+}
+
+#love .feedback div#contents{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#love .feedback a{
+    margin-top: 100px;
+}
+
+#love .feedback div#chief{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+#love .feedback div#chief a{
+    color: #2186eb;
+    margin-left: 20px;
+}
+
+#love .feedback div#chief p{
+    margin-left: 20px;
+}
+#love .feedback div#chief div:nth-child(2){
+    margin-left: 200px;
+}
+
+/* look */
+
+#looks h2{
+    text-align: center;
+    margin-top: 100px;   
+}
+
+#looks h2 span{
+    color: #2186eb;
+}
+
+input{
+    display:none;
+}
+
+#looks .slider{
+    display: flex;
+} 
+
+.slide{
+    margin-top: 81px;
+    opacity: 0.4;
+}
+
+.button{
+    margin-top: 40px;
+    margin-left: 500px;
+}
+
+label{
+    margin: 20px;
+    width: 25px;
+    height: 25px;
+    background-color:#b8c8d8;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+input#one:checked + div,
+input#two:checked + div,
+input#three:checked + div,
+input#four:checked + div,
+input#five:checked + div
+
+{
+    opacity: 1;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.3);
+}
+
+#looks .slider .slide:hover{
+    opacity: 1;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.3);
+}
+
+input#one:checked label#show_slide1,
+input#two:checked label#show_slide2,
+input#three:checked label#show_slide3,
+input#four:checked label#show_slide4,
+input#five:checked label#show_slide5
+{
+    background-color:#1f7cda;;
+}
+
+/* faq */
+#faq h2{
+    margin-top: 150px;
+    text-align: center;
+}
+
+#faq h2 span{
+    color: #2186eb;
+}
+
+#faq-contents{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq-contents #contents li{
+    display: flex;
+    font-size: 25px;
+    color: #627d98;
+    font-weight: 400;
+    margin-top:15px ;
+    border-radius: 10px;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.1);
+    width: 700px;
+}
+
+#faq-contents #contents li a{
+    margin-left: auto;
+    line-height:70px ;
+}
+
+#faq-contents #contents li div p:nth-child(1){
+    line-height: 70px;
+    margin-left: 40px;
+}
+
+#faq-contents #contents li div p:nth-child(2){
+    display: none;
+    font-size: medium;
+    margin-left: 40px;
+}
+
+
+#faq-contents #contents li:hover p:nth-child(1){
+    color: #1f7cda;
+}
+
+#faq-contents #contents li:hover p:nth-child(2){
+    display: inline;
+}
+
+#faq-contents #contents li a:last-child{
+    display: none;
+}
+
+#faq-contents #contents li:hover a:last-child{
+    display: inline-block;
+}
+#faq-contents #contents li:hover a:nth-child(2){
+    display: none;
+}
+
+#faq-contents #smart-w{
+    justify-content: flex-start;
+}
+
+/* CTA */
+
+#cta{
+    margin-top: 80px;
+}
+
+#cta #container {
+    display: flex;
+    background-color: #1f7cda;
+}
+
+#cta #container h2{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-weight: 16px;
+}
+
+#cta #container div#content p{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 16px;
+}
+
+#cta #container div#button p{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 16px;
+}
+
+#cta #container div#email{
+    display: flex;
+    text-align: center;
+}
+#cta #container div#email p{
+    margin-left: 20px
+    ;
+    color: #1f7cda;
+    text-align: center;
+    /* font-weight: 16px; */
+}
+
+#cta #container div#email a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+#cta #container div#form{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 500px;
+    height: 70px;
+    background-color: rgb(236, 234, 229);
+    border-radius: 40px;
+}
+
+#cta div#container div#form div#button{
+    width:200px;
+    height: 60px;
+    background-color: #1f7cda;
+    border-radius: 40px;
+    margin-left: 200px;
+    margin-top: 5px;
+}
+
+#cta div#content div#icon {
+    margin-top: 20px;
+    margin-left: 250px;
+}
+#cta div#content div#icon a {
+    margin-left: 20px;
+}
+
+
+
+/* pricing plans */
+#pricing_plans{
+    margin-top: 120px;
+    /* line-height: 16px; */
+}
+
+#pricing_plans #content  h2{
+    font-size: 24px;
+    /* line-height: 31px; */
+    font-weight: 700;
+    color: #334e68;
+    margin-top: 17px;
+    text-align: center;
+}
+#pricing_plans #content h2 span{
+    color: #2186eb;
+}
+
+#pricing_plans  #container #content p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#pricing{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.pricing_1{
+    text-align: center;
+    width: 315px;
+    height: 556px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.3);
+    border-radius: 15px;
+}
+
+.pricing_1 p{
+    margin-top: 20px;
+    color: #47748f;
+}
+
+.pricing_1 div.status{
+    width: 150px;
+    height: 39px;
+    background-color: #e6f6ff;
+    margin-left: 90px;
+    border-radius: 40px;
+}
+.pricing_1 div.status p{
+    margin-top: 20px;
+    color: #2185e9;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.pricing_1 div.number h3{
+    color:#2185e9;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pricing_1 p span{
+    font-size: 20px;
+    font-weight:580;
+}
+
+.pricing_1 div.sign_up{
+    width: 150px;
+    height: 39px;
+    margin-left: 90px;
+    margin-top: 15px;
+    border-radius: 40px;
+    border: 2px solid #2185e9 ;
+}
+
+.pricing_1 div.sign_up p{
+    text-align: center;
+    margin-top: 10px;
+    color:  #2185e9;
+    font-weight:600;
+}
+
+/* hover */
+.pricing_1:hover {
+    background-color: #2185e9 ;
+}
+
+.pricing_1:hover p{
+    color:white;
+}
+
+.pricing_1:hover div.number h3{
+    color:white;
+}
+
+.pricing_1:hover div.status{
+    background-color: #eeeff0;
+}
+
+.pricing_1:hover div.sign_up{
+    background-color: white;
+}
+
+
+/* blog */
+#blog{
+    margin-top: 120px;
+    /* line-height: 16px; */
+}
+
+#blog #content  h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #334e68;
+    margin-top: 17px;
+    text-align: center;
+}
+
+#blog #content h2 span{
+    color: #2186eb;
+}
+
+#blogs{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 220px;
+}
+
+.blog_1{
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 15px 35px  rgba(51,78,104,0.3);
+    border-radius: 15px;
+    margin-left: 50px;
+    padding:20px;
+}
+.blog_1 p{
+    margin-top: 15px;
+}
+
+.blog_1 p:first-child{
+    color: #334e68;
+     font-style: italic;
+}
+
+.blog_1 p:nth-child(2){
+    font-size: 20px;
+}
+
+.blog_1 p:last-child{
+    color: #334e68;
+}
+
+.blog_1:hover p:nth-child(2){
+    color: #308eec;
+}
+
+#container div#view{
+    height: 50px;
+    width: 150px;
+    background-color: #2186eb;
+    margin:  50px 860px;
+    border-radius: 40px;
+}
+
+
+#container div#view p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+/* contract */
+#contact{
+    margin-top: 120px;
+    /* line-height: 16px; */
+}
+
+#contact #container  h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #334e68;
+    margin-top: 17px;
+    text-align: center;
+}
+
+#contact #container  h2 span{
+    color: #2186eb;
+}
+
+
+#contact #container p {
+    margin-top: 20px;
+    text-align: center;
+    color: #47748f;
+}
+
+#contact #container  #cont {
+    display: flex;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+/* nut email */
+#contact #container #cont #email {
+    display: flex;
+    width: 250px;
+    height: 60px;
+    border: 2px solid  #2186eb;
+    border-radius: 40px;
+}
+#contact #container #cont #email a{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#contact #container #cont #email p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* lam nut select */
+#contact #container #cont #select {
+    margin-left: 20px;
+    display: flex;
+    width: 250px;
+    height: 60px;
+    border: 2px solid  #2186eb;
+    border-radius: 40px;
+}
+#contact #container #cont #select a{
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+#contact #container #cont #select p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+
+/* lam nut submit */
+
+#contact #container #cont #submit {
+    margin-left: 20px;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    border: 2px solid  #2186eb;
+    border-radius: 40px;
+    background-color:#2186eb;
+}
+
+#contact #container #cont #submit p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 80px;
+    color: #e1e7eb;
+}
+
+/* lam icon phan cuoi */
+#contact #container #icon{
+    display: flex;
+    margin-left: 560px;
+    margin-top: 20px;
+}
+#contact #container #icon a{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #1f7cda;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#contact #container #icon p{
+    margin-left: 20px;
+    color: #1f7cda;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* phan map */
+#contact #container #map{
+    margin-top:40px ;
+}
+
+
+
+/* footer */
+#footer{
+    height: 150px;
+    background-color: #1f7cda;
+}
+
+#footer #container{
+    display: flex;
+}
+
+#footer #container #app{
+    margin-top: 16px;
+    margin-left: 150px;
+}
+
+#footer #container #list ul{
+    display: flex;
+} 
+
+#footer #container #list {
+    margin-left: 700px;
+} 
+
+#footer #container #list ul li{
+    display: inline-block;
+}
+
+#footer #container #list ul li a{
+    display: inline-flex;
+    line-height: 54px;
+    height: 54px;
+    color: white;
+    font-size: 20px;
+    padding: 0px 25px;
+    margin-top: 17px;
+}
+
+#footer #icon{
+    display: flex;
+    color:white;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+#footer #icon div#end{
+    margin-left: 1050px;
+}
+
+#footer #icon div#end a{
+    margin-left: 20px;
+}
